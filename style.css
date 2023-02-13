@@ -1,0 +1,263 @@
+body {
+    margin: 0px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cont {
+    margin: 30px 40px 0px 40px;
+}
+
+.mobile-header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-tex {
+    display: inline;
+    font-weight: bold;
+    margin-top: -200px;
+}
+
+.tablet-bg{
+    display: none;
+}
+
+.mobile-content-bg {
+    transform: translate(0px, -150px);
+}
+
+.main-text-content {
+    margin-top: -700px;
+    margin-bottom: 200px;
+}
+
+.main-header {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.454545px;
+    color: #191826;
+}
+
+.black-background {
+    width: 100%;
+    background-color: black;
+    border-radius: 12px;
+    height: 600px;
+    margin-top: 30px;
+    background-image: url(./starter-code/assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile {
+    width: 208.97px;
+    height: 430px;
+    transform: translateY(-100px);
+}
+
+
+/* orange content */
+.orange-content {
+    padding: 37px;
+    margin-top: -100px;
+    width: 375px;
+    border-radius: 12px;
+    height: 600px;
+    background-color: rgba(250, 116, 83, 1);
+}
+
+.orange-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FCFAF9;
+}
+
+.orange-paragrap {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FCFAF9;
+}
+
+.price-per-month {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: #FCFAF9;
+}
+
+.dollar {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 52px;
+    color: #FCFAF9;
+}
+
+.btn-ios {
+    width: 296px;
+    height: 61px;
+    left: 42px;
+    background: #191826;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-android {
+    width: 296px;
+    height: 61px;
+    background: #FCFAF9;
+    border-radius: 12px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/* footer */
+
+
+.footer-paragrap {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #191826;
+    width: 327px;
+}
+
+.footer-icon img {
+    margin: 10px;
+}
+
+
+/* Tablet content */
+
+@media screen and (min-width: 768px) {
+    .mobile-content-bg{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-text-content{
+        margin-top: 1px;
+        width: 514px;        
+    }
+
+    .tablet-bg{
+        display: flex;
+        background-image: url(./starter-code/assets/bg-main-tablet.png);
+    }
+
+    .tablet-img{
+        width: 267px;
+        transform: translateY(-30px);
+    }
+
+    /* black & orange ontent */
+
+    .mobile{
+        width: 270.21px;
+        height: 556px;
+        transform: translate(-100px , -100px);
+    }
+
+    .orange-content{
+        width: 399px;
+        height: 546px;
+        transform: translate(330px, -300px);
+    }
+
+    /* footer */
+
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .footer-text{
+        width: 366px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+/* decsktop */
+
+@media screen and (min-width: 1440px) {
+    .main-text-content{
+        width: 1015px;
+    }
+
+    .main-header{
+        font-weight: 700;
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -1px;
+        color: #191826;
+        width: 825px;
+    }
+
+    .main-paragrap{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        color: #191826;
+        width: 825px;
+    }
+
+    .tablet-bg{
+        background-image: url(./starter-code/assets/bg-main-desktop.png);
+    }
+
+    .tablet-img{
+        width: 316px;
+    }
+
+    .black-background{
+        width: 1100px;
+        display: block;
+        margin: auto;
+    }
+
+    .mobile{
+        transform: translate(118px, -198px);
+        width: 280px;
+        height: 606px;
+    }
+
+    .orange-content{
+        width: 446px;
+        height: 625px;
+        transform: translate(796px, -300px);
+    }
+
+    .footer-paragrap{
+        display: none;
+    }
+
+    .tablet-footer-paragrap{
+        width: 366px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
